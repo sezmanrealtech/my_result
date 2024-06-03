@@ -1,0 +1,256 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* ==========Primary================= */
+
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+  /*========== Gradients============== */
+
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+
+  /*=========== Neutral================ */
+
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-grayblue: hsl(224, 30%, 27%);
+}
+/* ============================================================================== */
+body {
+  display: flex;
+  justify-content: center;
+}
+/* ================================= MAIN CON==================================== */
+
+.main_con {
+  max-width: 700px;
+  /* height: 600px; */
+  display: flex;
+  justify-content: center;
+  /* border: 3px solid gold; */
+  margin-top: 150px;
+  color: var(0, 0%, 100%);
+  box-shadow: 5px 20px 30px rgba(221, 100%, 96% 0.1);
+  border-radius: 30px;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+/* ========================MEDIA QUERY (HOW IT SHOULD LOOK ON MOBILE====================== */
+
+/* Media Query from screen 500px to 0px */
+@media (max-width: 500px) {
+  .main_con {
+    flex-direction: column;
+    border-radius: 0;
+    margin: 0;
+  }
+}
+
+/* ==================================CARD 1============================================ */
+.card_1 {
+  /* border: 3px solid blue; */
+  max-width: 350px;
+  /* height: 600px; */
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  color: var(--White);
+  text-align: center;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+@media (max-width: 500px) {
+  .card_1 {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+.your {
+  font-size: 22px;
+  font-weight: 200;
+}
+
+.circle {
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  width: 200px;
+  height: 200px;
+  margin: 30px auto;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin-top: 30px; */
+}
+
+.seventy_six {
+  font-size: 70px;
+  font-weight: 800;
+}
+
+.card_1 h2 {
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.you {
+  font-size: 18px;
+  padding: 0 40px;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+/* ==================================CARD 2============================================= */
+
+.card_2 {
+  /* border: 3px solid greenyellow; */
+  max-width: 350px;
+  /* height: 600px; */
+  padding: 20px;
+  /* border-radius: 30px; */
+}
+
+.card_2 h3 {
+  color: var(--Dark-grayblue);
+}
+
+.results {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.of_100 {
+  color: var(--Light-slate-blue);
+}
+
+/* vvvv=============HUE, SATURATION, LIGETHEN, OPACITY=============== */
+/* =================RED-======================== */
+.red {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+.react {
+  display: flex;
+  gap: 15px;
+}
+
+.react p {
+  color: var(--Light-red);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.memo p {
+  font-size: 18px;
+  color: hsla(224, 30%, 27% 0.5);
+  font-weight: 700;
+}
+
+.memo p span {
+  color: var(--Dark-grayblue);
+  font-weight: 700;
+}
+/* ======================MEMORY========================= */
+.yellow {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px;
+}
+.memory {
+  display: flex;
+  gap: 15px;
+}
+
+.memory p {
+  color: var(--Orangey-yellow);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* ====================VERBAL======================== */
+.green {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px;
+}
+.verbal {
+  display: flex;
+  gap: 15px;
+}
+
+.verbal p {
+  color: var(--Green-teal);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* ======================VISION========================= */
+.blue {
+  background-color: hsl(234, 85%, 45%, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px;
+}
+.visual {
+  display: flex;
+  gap: 15px;
+}
+
+.visual p {
+  color: var(--Light-royal-blue);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* ==================SUMMARY======================= */
+
+.button {
+  display: flex;
+  justify-content: center;
+  background-color: var(--Dark-grayblue);
+  color: var(--White);
+  padding: 15px 100px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.main_con button:hover {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+}
