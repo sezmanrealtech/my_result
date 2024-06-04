@@ -88,7 +88,7 @@ body {
 }
 
 .circle {
-  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  background: linear-gradient(red, hsla(241, 72%, 46%, 0));
   width: 200px;
   height: 200px;
   margin: 30px auto;
@@ -163,7 +163,7 @@ body {
 
 .memo p {
   font-size: 18px;
-  color: hsla(224, 30%, 27% 0.5);
+  color: gray;
   font-weight: 700;
 }
 
